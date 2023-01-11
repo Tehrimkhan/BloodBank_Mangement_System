@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbmsModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Donor">
+    <Key>
+      <PropertyRef Name="D_id" />
+    </Key>
+    <Property Name="D_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="D_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="D_age" Type="Int32" />
+    <Property Name="D_weight" Type="Double" />
+    <Property Name="D_haemoglobin" Type="Double" />
+    <Property Name="D_blood" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DbmsEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Donors" EntityType="Self.Donor" />
+  </EntityContainer>
+</Schema>

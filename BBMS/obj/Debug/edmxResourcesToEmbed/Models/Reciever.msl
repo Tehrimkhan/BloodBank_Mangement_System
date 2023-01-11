@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbmsModel2StoreContainer" CdmEntityContainer="DbmsEntities2">
+    <EntitySetMapping Name="Recievers">
+      <EntityTypeMapping TypeName="DbmsModel2.Reciever">
+        <MappingFragment StoreEntitySet="Reciever">
+          <ScalarProperty Name="R_id" ColumnName="R_id" />
+          <ScalarProperty Name="R_name" ColumnName="R_name" />
+          <ScalarProperty Name="R_bloodname" ColumnName="R_bloodname" />
+          <ScalarProperty Name="R_age" ColumnName="R_age" />
+          <ScalarProperty Name="R_phnnum" ColumnName="R_phnnum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
